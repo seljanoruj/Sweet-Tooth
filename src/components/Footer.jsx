@@ -1,6 +1,8 @@
 import React from 'react'
 import crown from "../assets/image/crown-logo.png"
 import map from "../assets/image/map.png"
+import { Link } from 'react-router-dom'
+
 const Footer = () => {
   return (
       <footer>
@@ -28,6 +30,9 @@ const Footer = () => {
                       <div className="box3">
                           <img src={map} />
                       </div>
+                  </div>
+                  <div className="links">
+                      <Link to="/home" >Home</Link>
                   </div>
               </div>
           </div>
