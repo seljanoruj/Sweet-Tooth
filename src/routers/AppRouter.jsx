@@ -9,10 +9,12 @@ import OurProcess from "../components/pages/OurProcess"
 import ContactUs from "../components/pages/ContactUs"
 import Blog from "../components/pages/Blog"
 import Products from "../components/pages/Products"
+// import Nav from "../components/pages/Nav";
 
 const AppRouter = () => {
   return (
     <BrowserRouter>
+     {/* <Nav /> */}
      <Switch>
         <Route exact path="/" component={Entry} ></Route>
         <Route exact path="/home" component={Home} ></Route>

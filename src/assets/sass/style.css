@@ -593,7 +593,7 @@ footer .box3 img {
 }
 
 nav {
-  background-color: #faf7f3;
+  background-color: transparent;
   width: 100%;
   height: 10vh;
   display: -webkit-box;
@@ -644,9 +644,26 @@ nav .right {
 nav .right a {
   color: black;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
   font-family: 'Open Sans', sans-serif;
+}
+
+nav .right a i {
+  color: black;
+  font-size: 18px;
+}
+
+nav .right button {
+  border: none;
+  background-color: transparent;
+  color: black;
+  font-size: 18px;
+}
+
+nav .right button i {
+  color: black;
+  font-size: 18px;
 }
 
 nav .right .now {
@@ -656,7 +673,7 @@ nav .right .now {
 .HFirst {
   width: 100%;
   height: 100vh;
-  background-color: blueviolet;
+  position: relative;
 }
 
 .HFirst .swiper-button-prev {
@@ -664,6 +681,68 @@ nav .right .now {
 }
 
 .HFirst .swiper-button-next {
+  color: #c9a74d;
+}
+
+.HFirst nav {
+  width: 100%;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  z-index: 44444;
+}
+
+.HFirst nav .left {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.HFirst nav .left img {
+  width: 110px;
+  height: 60px;
+  margin-left: 35px;
+}
+
+.HFirst nav .right {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.HFirst nav .right a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.HFirst nav .right .now {
   color: #c9a74d;
 }
 
@@ -684,6 +763,12 @@ nav .right .now {
           justify-content: center;
 }
 
+.HFirst .slide1 .text {
+  width: 100%;
+  height: 100%;
+  background-color: cadetblue;
+}
+
 .HFirst .slide2 {
   width: 100%;
   height: 100%;
@@ -701,6 +786,12 @@ nav .right .now {
           justify-content: center;
 }
 
+.HFirst .slide2 .text {
+  width: 100%;
+  height: 100%;
+  background-color: cadetblue;
+}
+
 .HFirst .slide3 {
   width: 100%;
   height: 100%;
@@ -716,6 +807,12 @@ nav .right .now {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.HFirst .slide3 .text {
+  width: 100%;
+  height: 100%;
+  background-color: cadetblue;
 }
 
 .HSecond {
@@ -996,11 +1093,15 @@ nav .right .now {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 .HFifth .img img {
+  bottom: 0;
+  right: 0;
   width: 700px;
   height: 582px;
+  position: absolute;
 }
 
 .HFifth .text {
@@ -1019,6 +1120,7 @@ nav .right .now {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 30px;
 }
 
 .HFifth .text .line {
@@ -1087,9 +1189,12 @@ nav .right .now {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 .HSixth .img img {
+  left: 0;
+  position: absolute;
   width: 703px;
   height: 550px;
 }
@@ -1310,16 +1415,25 @@ nav .right .now {
   transition: ease-in-out 1s;
 }
 
-.HEighth .photo img {
-  width: 400px;
-  height: 400px;
-  -webkit-transition: ease-out 0.5s;
-  transition: ease-out 0.5s;
+.HEighth .photo .box {
+  background-color: rgba(40, 40, 40, 0.8);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  z-index: 3;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
-.HEighth .photo img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+.HEighth .photo img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: ease-out 0.5s;
+  transition: ease-out 0.5s;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .HEighth .photo .text {
@@ -1339,24 +1453,48 @@ nav .right .now {
           justify-content: center;
 }
 
-.HEighth .photo .text h1 {
+.HEighth .photo .text h6 {
+  color: #fff;
+  -webkit-transition: all 0.9s ease;
+  transition: all 0.9s ease;
   opacity: 0;
+  z-index: 5;
+  font-size: 40px;
+  font-weight: 100;
 }
 
 .HEighth .photo .text p {
+  color: #cfa030;
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease;
   opacity: 0;
+  z-index: 4;
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
 }
 
-.HEighth .photo:hover h1 {
+.HEighth .photo:hover h6 {
   opacity: 1;
-  -webkit-transform: scale(0.7);
-          transform: scale(0.7);
+  -webkit-transform: translateY(12px);
+          transform: translateY(12px);
 }
 
 .HEighth .photo:hover p {
   opacity: 1;
-  -webkit-transform: scale(0.7);
-          transform: scale(0.7);
+  -webkit-transform: translateY(14px);
+          transform: translateY(14px);
+}
+
+.HEighth .photo:hover .box {
+  opacity: 1;
+  visibility: visible;
+  color: #fff;
+}
+
+.HEighth .photo:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .AFirst {
@@ -1374,6 +1512,70 @@ nav .right .now {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+}
+
+.AFirst nav {
+  top: 0;
+  width: 100%;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  z-index: 44444;
+}
+
+.AFirst nav .left {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.AFirst nav .left img {
+  width: 110px;
+  height: 60px;
+  margin-left: 35px;
+}
+
+.AFirst nav .right {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.AFirst nav .right a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.AFirst nav .right .now {
+  color: #c9a74d;
 }
 
 .AFirst .text {
@@ -1593,6 +1795,24 @@ nav .right .now {
 .AFifth .box {
   width: 100%;
   height: 100%;
+  position: relative;
+}
+
+.AFifth .box .boxGrey {
+  background-color: rgba(3, 3, 3, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.AFifth .box:hover .boxGrey {
+  visibility: visible;
+  opacity: 1;
 }
 
 .AFifth .box img {
@@ -1616,6 +1836,70 @@ nav .right .now {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+}
+
+.CFirst nav {
+  top: 0;
+  position: absolute;
+  background-color: transparent;
+  width: 100%;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.CFirst nav .left {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.CFirst nav .left img {
+  width: 110px;
+  height: 60px;
+  margin-left: 35px;
+}
+
+.CFirst nav .right {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.CFirst nav .right a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.CFirst nav .right .now {
+  color: #c9a74d;
 }
 
 .CFirst h1 {
@@ -1811,6 +2095,70 @@ nav .right .now {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+}
+
+.OFirst nav {
+  top: 0;
+  width: 100%;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  z-index: 44444;
+}
+
+.OFirst nav .left {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.OFirst nav .left img {
+  width: 110px;
+  height: 60px;
+  margin-left: 35px;
+}
+
+.OFirst nav .right {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.OFirst nav .right a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.OFirst nav .right .now {
+  color: #c9a74d;
 }
 
 .OFirst .text {

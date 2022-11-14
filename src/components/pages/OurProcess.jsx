@@ -8,8 +8,8 @@ import icecream from "../../assets/image/ice-cream2.jpeg"
 const OurProcess = () => {
   return (
     <>
-      <Nav />
       <section className='OFirst'>
+        <Nav />
         <div className="container">
           <div className="row">
             <div className="col-lg-12 col-md-12 col-sm-12 col-12">

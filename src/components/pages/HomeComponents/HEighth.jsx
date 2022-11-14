@@ -11,36 +11,40 @@ const HEighth = () => {
                 <div className="row">
                     <div className="col-lg-3 col-md-3 col-sm-3 col-12 p-0">
                         <div className="photo">
+                            <div className="box"></div>
                             <img src={photo1} />
                             <div className="text">
-                                <h1>Creamy Creations</h1>
+                                <h6>Creamy Creations</h6>
                                 <p>Chocolate/Golden</p>
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-3 col-sm-3 col-12 p-0">
                         <div className="photo">
+                            <div className="box"></div>
                             <img src={photo2} />
                             <div className="text">
-                                <h1>Decorative Pumpkin</h1>
+                                <h6>Decorative Pumpkin</h6>
                                 <p>Biscuits/Golden</p>
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-3 col-sm-3 col-12 p-0">
                         <div className="photo">
+                            <div className="box"></div>
                             <img src={photo3} />
                             <div className="text">
-                                <h1>Gold Apple</h1>
+                                <h6>Gold Apple</h6>
                                 <p>Biscuits/Golden</p>
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-3 col-sm-3 col-12 p-0">
                         <div className="photo">
+                            <div className="box"></div>
                             <img src={photo4} />
                             <div className="text">
-                                <h1>The Perfect Dose</h1>
+                                <h6>The Perfect Dose</h6>
                                 <p>Cookies/Golden</p>
                             </div>
                         </div>

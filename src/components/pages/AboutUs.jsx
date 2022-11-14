@@ -18,8 +18,8 @@ import lol from "../../assets/image/about-lolipop.png"
 const AboutUs = () => {
   return (
     <>
-      <Nav />
       <section className='AFirst'>
+        <Nav />
         <div className="container">
           <div className="row">
             <div className="col-lg-12 col-md-12 col-sm-12 col-12">
@@ -122,58 +122,54 @@ const AboutUs = () => {
         </div>
       </section>
       <section className='AFourth'>
-        <div className="container">
-          <div className="row">
-            <Swiper
-              autoplay={{
-                delay: 2000,
-                disableOnInteraction: false,
-              }}
-              spaceBetween={20}
-              effect={"fade"}
-              navigation={true}
-              pagination={{
-                clickable: true,
-              }}
-              className='swiper'
-              modules={[Navigation, A11y, EffectFade, Autoplay]}
-              slidesPerView={1}
-              loop={true}
-              style={{ width: "100%", height: "100%" }}
-            >
-              <SwiperSlide className='slide'>
-                <div className="container">
-                  <div className="row">
-                    <div className="col-lg-12 col-md-12 col-sm-12 col-12">
-                      <div className="text">
-                        <h1>Amazing Taste</h1>
-                        <div className="line"></div>
-                        <h2>Auctor gravida lorem Ipsum proin nibh vel velit aliquetenean sollicitudin, gravida lorem <br /> qui bibendum auctor, nisi elit consequat nibh vel velit auctor lorem qui bibendum auctor <br /> aliquetenean proin gravida nibh Ipsum proin gravida consequa nibh vel nisi elit.  Elit nisi <br />
-                          consequat gravida vel velit nibh velit.</h2>
-                        <h3>Maggie Brock/<span>Candy Maker</span> </h3>
-                      </div>
-                    </div>
+        <Swiper
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
+          spaceBetween={30}
+          effect={"fade"}
+          navigation={true}
+          pagination={{
+            clickable: true,
+          }}
+          className='swiper'
+          modules={[Navigation, A11y,Autoplay]}
+          slidesPerView={1}
+          loop={true}
+          style={{ width: "100%", height: "100%" }}
+        >
+          <SwiperSlide className='slide'>
+            <div className="container">
+              <div className="row">
+                <div className="col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div className="text">
+                    <h1>Amazing Taste</h1>
+                    <div className="line"></div>
+                    <h2>Auctor gravida lorem Ipsum proin nibh vel velit aliquetenean sollicitudin, gravida lorem <br /> qui bibendum auctor, nisi elit consequat nibh vel velit auctor lorem qui bibendum auctor <br /> aliquetenean proin gravida nibh Ipsum proin gravida consequa nibh vel nisi elit.  Elit nisi <br />
+                      consequat gravida vel velit nibh velit.</h2>
+                    <h3>Maggie Brock/<span>Candy Maker</span> </h3>
                   </div>
                 </div>
-              </SwiperSlide>
-              <SwiperSlide className='slide'>
-                <div className="container">
-                  <div className="row">
-                    <div className="col-lg-12 col-md-12 col-sm-12 col-12">
-                      <div className="text">
-                        <h1>Amazing Taste</h1>
-                        <div className="line"></div>
-                        <h2>Auctor gravida lorem Ipsum proin nibh vel velit aliquetenean sollicitudin, gravida lorem <br /> qui bibendum auctor, nisi elit consequat nibh vel velit auctor lorem qui bibendum auctor <br /> aliquetenean proin gravida nibh Ipsum proin gravida consequa nibh vel nisi elit.  Elit nisi <br />
-                          consequat gravida vel velit nibh velit.</h2>
-                        <h3>Maggie Brock/<span>Candy Maker</span> </h3>
-                      </div>
-                    </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className='slide'>
+            <div className="container">
+              <div className="row">
+                <div className="col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div className="text">
+                    <h1>Amazing Taste</h1>
+                    <div className="line"></div>
+                    <h2>Auctor gravida lorem Ipsum proin nibh vel velit aliquetenean sollicitudin, gravida lorem <br /> qui bibendum auctor, nisi elit consequat nibh vel velit auctor lorem qui bibendum auctor <br /> aliquetenean proin gravida nibh Ipsum proin gravida consequa nibh vel nisi elit.  Elit nisi <br />
+                      consequat gravida vel velit nibh velit.</h2>
+                    <h3>Maggie Brock/<span>Candy Maker</span> </h3>
                   </div>
                 </div>
-              </SwiperSlide>
-            </Swiper>
-          </div>
-        </div>
+              </div>
+            </div>
+          </SwiperSlide>
+        </Swiper>
       </section>
       <section className='AFifth'>
         <div className="container-fluid">
@@ -187,21 +183,25 @@ const AboutUs = () => {
             </div>
             <div className="col-lg-3 col-md-3 col-sm-3 col-12 p-0">
               <div className="box">
+                <div className="boxGrey"></div>
                 <img src={img1} />
               </div>
             </div>
             <div className="col-lg-3 col-md-3 col-sm-3 col-12 p-0">
               <div className="box">
+                <div className="boxGrey"></div>
                 <img src={img2} />
               </div>
             </div>
             <div className="col-lg-3 col-md-3 col-sm-3 col-12 p-0">
               <div className="box">
+                <div className="boxGrey"></div>
                 <img src={img3} />
               </div>
             </div>
             <div className="col-lg-3 col-md-3 col-sm-3 col-12 p-0">
               <div className="box">
+                <div className="boxGrey"></div>
                 <img src={img4} />
               </div>
             </div>
