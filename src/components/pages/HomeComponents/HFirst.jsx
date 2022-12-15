@@ -29,7 +29,7 @@ const HFirst = () => {
       >
         <SwiperSlide className='slide1'>
           <div className="container">
-            <div className="row">
+            <div className="row justify-content-end">
               <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                 <div className="text">
                   <h1>It's Delish</h1>
@@ -43,8 +43,8 @@ const HFirst = () => {
         </SwiperSlide>
         <SwiperSlide className='slide2'>
           <div className="container">
-            <div className="row">
-              <div className="col-lg-12 col-md-12 col-sm-12 col-12">
+            <div className="row justify-content-end">
+              <div className="col-lg-6 col-md-6 col-sm-6 col-12">
                 <div className="text">
                   <h1>A Sweet Bite</h1>
                   <div className="line"></div>
@@ -57,8 +57,8 @@ const HFirst = () => {
         </SwiperSlide>
         <SwiperSlide className='slide3'>
           <div className="container">
-            <div className="row">
-              <div className="col-lg-12 col-md-12 col-sm-12 col-12">
+            <div className="row justify-content-end">
+              <div className="col-lg-6 col-md-6 col-sm-6 col-12">
                 <div className="text">
                   <h1>A Delicacy</h1>
                   <div className="line"></div>

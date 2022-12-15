@@ -30,7 +30,7 @@ const Entry = () => {
     navText: ["Prev", "Next"],
     smartSpeed: 1000,
     autoplay: true,
-    autoplayTimeout: 1000,
+    autoplayTimeout: 600,
     loop: true
   };
 

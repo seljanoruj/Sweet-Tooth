@@ -1,6 +1,6 @@
 import React from 'react'
-import crown from "../assets/image/crown-logo.png"
-import map from "../assets/image/map.png"
+import crown from "../../assets/image/crown-logo.png"
+import map from "../../assets/image/map.png"
 import { Link } from 'react-router-dom'
 
 const Footer = () => {

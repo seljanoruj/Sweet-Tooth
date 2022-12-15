@@ -1000,7 +1000,7 @@ nav{
 }
 .AFirst{
     width: 100%;
-    height: 60vh;
+    height: 80vh;
     background-size: cover;
     background-position: center;
     background-image: url(../image/about-bg.jpeg);
@@ -1062,7 +1062,7 @@ nav{
             margin: 0px;
         }
         h2{
-            color: #fff;
+            color: rgb(12, 11, 11);
             font-size: 18px;
             font-weight: 100;
             font-family: 'Open Sans', sans-serif;
@@ -1278,7 +1278,7 @@ nav{
         margin-bottom: 20px;
     }
     span{
-        color: #7c7c7c;
+        color: #1a1818;
         font-size: 18px;
         font-weight: 300;
         font-family: 'Open Sans', sans-serif;
@@ -1389,7 +1389,6 @@ nav{
     width: 100%;
     height: 80vh;
     background-attachment: fixed;
-    background-position: top;
     background-image: url(../image/our-process-bg.jpeg);
     display: flex;
     align-items: center;
@@ -1450,7 +1449,7 @@ nav{
         }
         p{
             font-size: 20px;
-            color: #7c7c7c;
+            color: #0a0a0a;
             font-family: 'Open Sans', sans-serif;
         }
         .line{
@@ -1547,4 +1546,215 @@ nav{
             margin-bottom: 20px;
         }
     }
+}
+.OFourth{
+    width: 100%;
+    height: 70vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../image/our-process-bg2.jpeg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .box{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        h1{
+            color: #030303;
+            font-size: 45px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            font-family: 'Tangerine', cursive;
+        }
+        p{
+            color: #7c7c7c;
+            font-size: 17px;
+            font-family: 'Open Sans', sans-serif;
+        }
+    }
+}
+.OFifth{
+    width: 100%;
+    height: 65vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url(../image//bg-cookie.jpeg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // position: relative;
+    .box{
+        width: 100%;
+        height: 100%;
+        //background-color: #a38021;
+        display: flex;
+        flex-direction: column;
+        // right: 25%;
+        // top: 50%;
+        // position: absolute;
+        .buttons{
+            //background-color: aqua;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            button{
+                border: 1px solid #cfa030;
+                background-color: transparent;
+                padding: 14px 28px;
+                color: #363636;
+                letter-spacing: 1px;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 300;
+                font-size: 16px;
+                transition: all 0.5s;
+                &:hover{
+                    background-color: #c9a74d;
+                }
+            }
+        }
+        p{
+            color: #7c7c7c;
+            margin-top: 15px;
+            font-size: 20px;
+            font-family: 'Playfair Display', serif;
+            font-weight: 300;
+        }
+        span{
+            i{color: #cfa030;}
+            color: #7c7c7c;
+            font-size: 18px;
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 1px;
+        }
+    }
+}
+.OSixth{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .right{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 605px;
+            height: 373px;
+        }
+    }
+    .left{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        .line{
+            width: 90px;
+            height: 2px;
+            background-color: #cfa030;
+            margin-bottom: 20px;
+        }
+        h1{
+            margin-bottom: 20px;
+            font-size: 65px;
+            font-weight: 200;
+            font-family: 'Tangerine', cursive;
+            letter-spacing: 1px;
+        }
+        span{
+            font-size: 18px;
+            font-weight: 300;
+            color: #7c7c7c;
+            font-family: 'Open Sans', sans-serif;
+        }
+    }
+}
+.PFirst{
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../image/shop-bg.jpeg);
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    nav{
+        top: 0;
+        position: absolute;
+        background-color: transparent;
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .left{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            img{
+                width: 110px;
+                height: 60px;
+                margin-left: 35px;
+            }
+        }
+        .right{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            a{
+                color: black;
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: 300;
+                font-family: 'Open Sans', sans-serif;
+            }
+            .now{
+                color:#c9a74d;
+            }
+        }
+    }
+    .box{
+        width: 100%;
+        height: 100%;
+        padding-top: 180px;
+        h1{
+            color: #000000;
+            font-size: 70px;
+            font-weight: 300;
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+        .line{
+            width: 100px;
+            height: 1px;
+            background-color: #cfa030;
+            margin-bottom: 20px;
+        }
+        span{
+            color: #111010;
+            font-size: 30px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            font-family: 'Open Sans', sans-serif;
+            i{
+                color: #cfa030;
+            }
+        }
+    }
+}
+.PSecond{
+    width: 100%;
+    height: 90vh;
+    background-color: #610274;
 }

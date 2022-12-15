@@ -17,9 +17,9 @@ const Nav = () => {
                             <NavLink activeClassName='now' exact to='/home'>Home</NavLink>
                             <NavLink activeClassName='now' to='/aboutus'>About Us</NavLink>
                             <NavLink activeClassName='now' to='/ourprocess'>Our Process</NavLink>
-                            <NavLink activeClassName='now' to='/contactus'>Contact Us</NavLink>
+                            <NavLink activeClassName='now' to='/shop'>Shop</NavLink>
                             <NavLink activeClassName='now' to='/blog'>Blog</NavLink>
-                            <NavLink activeClassName='now' to='/products' >Products</NavLink>
+                            <NavLink activeClassName='now' to='/contactus'>Contact Us</NavLink>
                             <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
                             <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
                             <button><i class="fa-solid fa-cookie-bite"></i></button>

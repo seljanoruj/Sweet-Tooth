@@ -1,14 +1,14 @@
 import React from 'react'
 import { BrowserRouter,Route,Switch } from 'react-router-dom'
 import Entry from '../components/pages/Entry'
-import Footer from "../components/Footer"
-import Last from "../components/Last"
+import Footer from "../components/common/Footer"
+import Last from "../components/common/Last"
 import Home from "../components/pages/Home"
 import AboutUs from "../components/pages/AboutUs"
 import OurProcess from "../components/pages/OurProcess"
 import ContactUs from "../components/pages/ContactUs"
 import Blog from "../components/pages/Blog"
-import Products from "../components/pages/Products"
+import Shop from "../components/pages/Shop"
 // import Nav from "../components/pages/Nav";
 
 const AppRouter = () => {
@@ -22,7 +22,7 @@ const AppRouter = () => {
         <Route exact path="/ourprocess" component={OurProcess} ></Route>
         <Route exact path="/contactus" component={ContactUs} ></Route>
         <Route exact path="/blog" component={Blog} ></Route>
-        <Route exact path="/products" component={Products} ></Route>
+        <Route exact path="/shop" component={Shop} ></Route>
      </Switch>
 
      <Footer/>
