@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import logo from "../../assets/image/black-logo.png"
+import logo from "../../assets/image/golden-logo.png"
 
 const Nav = () => {
     return (
@@ -20,11 +20,9 @@ const Nav = () => {
                             <NavLink activeClassName='now' to='/shop'>Shop</NavLink>
                             <NavLink activeClassName='now' to='/blog'>Blog</NavLink>
                             <NavLink activeClassName='now' to='/contactus'>Contact Us</NavLink>
-                            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
-                            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
-                            <button><i class="fa-solid fa-cookie-bite"></i></button>
+                            <NavLink to="/cart"><i class="fa-solid fa-cart-shopping"></i></NavLink>
+                            <NavLink to="/wishlist"><i class="fa-solid fa-heart"></i></NavLink>
                             <button>EN</button>
-                            <button><i class="fa-solid fa-bars"></i></button>
                         </div>
                     </div>
                 </div>

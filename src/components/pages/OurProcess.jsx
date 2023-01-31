@@ -1,5 +1,4 @@
 import React from 'react'
-import Nav from "./Nav"
 import pancakes from "../../assets/image/pancakes.jpeg"
 import icon1 from "../../assets/image/icon-1.png"
 import icon2 from "../../assets/image/icon-2.png"
@@ -10,7 +9,6 @@ const OurProcess = () => {
   return (
     <>
       <section className='OFirst'>
-        <Nav />
         <div className="container">
           <div className="row">
             <div className="col-lg-12 col-md-12 col-sm-12 col-12">
