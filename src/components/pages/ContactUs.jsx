@@ -1,6 +1,13 @@
 import React from 'react'
+import AOS from "aos"
+import { useEffect } from 'react';
 
 const ContactUs = () => {
+
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
     <>
       <section className='CFirst'>
@@ -8,9 +15,9 @@ const ContactUs = () => {
           <div className="row">
             <div className="col-lg-6 col-md-6 col-sm-6 col-12">
               <div className="text">
-                <h1>Contact Us</h1>
+                <h1 data-aos="fade-down" >Contact Us</h1>
                 <div className="line"></div>
-                <span>Etiam convallis, felis quis dapibus dictum, libero mauris luctus nunc, non fringilla purus ligula non justo. Non fringilla purus.</span>
+                <h2 data-aos="fade-right" > Choose Us,Be Satisfied <i class="fa-solid fa-phone-flip"></i> </h2>
               </div>
             </div>
           </div>
@@ -64,7 +71,7 @@ const ContactUs = () => {
         </div>
       </section>
       <section className='CThird'>
-        <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">measure distance on map</a></iframe>
+        <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
       </section>
     </>
   )

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import crown from "../../assets/image/crown-logo.png"
 import map from "../../assets/image/map.png"
 
@@ -11,10 +12,10 @@ const Footer = () => {
                       <div className="box1">
                           <h1>Sweet Tooth</h1>
                           <div className="line"></div>
-                          <a href=""rel="">Eight Avenue 487, New York</a>
-                          <a href=""rel="">+387643932728</a>
-                          <a href="">sweettooth@example.com</a>
-                          <a href="">© 2017 Qode Interactive,<br /> All Rights Reserved</a>
+                          <Link>Eight Avenue 487, New York</Link>
+                          <Link>+387643932728</Link>
+                          <Link>sweettooth@example.com</Link>
+                          <Link>© 2017 Qode Interactive,<br /> All Rights Reserved</Link>
                       </div>
                   </div>
                   <div className="col-lg-4 col-md-4 col-sm-4 col-12">

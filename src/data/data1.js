@@ -13,55 +13,55 @@ const data1 = [
         id:1,
         img:shop1,
         title:"Fruit Creme",
-        price:"4.00$"
+        price:4
     },
     {
         id:2,
         img:shop2,
         title:"Petits Fours",
-        price:"6.00$"
+        price:6
     },
     {
         id:3,
         img:shop3,
         title:"Golden Bites",
-        price:"8.00$"
+        price:8
     },
     {
         id:4,
         img:shop4,
         title:"Boston Cream",
-        price:"10.00$"
+        price:10
     },
     {
         id:5,
         img:shop5,
         title:"Pear Dessert",
-        price:"2.00$"
+        price:2
     },
     {
         id:6,
         img:shop6,
         title:"Dark Choco Tops",
-        price:"4.00$"
+        price:4
     },
     {
         id:7,
         img:shop7,
         title:"Decorative Pumpkin",
-        price:"15.00$"
+        price:15
     },
     {
         id:8,
         img:shop8,
         title:"Gold Apple",
-        price:"7.00$"
+        price:7
     },
     {
         id:9,
         img:shop9,
         title:"The Perfect Dose",
-        price:"9.00$"
+        price:9
     }
 ]
 

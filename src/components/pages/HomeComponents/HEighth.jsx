@@ -12,7 +12,7 @@ const HEighth = () => {
                     <div className="col-lg-3 col-md-3 col-sm-3 col-12 p-0">
                         <div className="photo">
                             <div className="box"></div>
-                            <img src={photo1} />
+                            <img src={photo1} alt=""  />
                             <div className="text">
                                 <h6>Creamy Creations</h6>
                                 <p>Chocolate/Golden</p>
@@ -22,7 +22,7 @@ const HEighth = () => {
                     <div className="col-lg-3 col-md-3 col-sm-3 col-12 p-0">
                         <div className="photo">
                             <div className="box"></div>
-                            <img src={photo2} />
+                            <img src={photo2} alt=""  />
                             <div className="text">
                                 <h6>Decorative Pumpkin</h6>
                                 <p>Biscuits/Golden</p>
@@ -32,7 +32,7 @@ const HEighth = () => {
                     <div className="col-lg-3 col-md-3 col-sm-3 col-12 p-0">
                         <div className="photo">
                             <div className="box"></div>
-                            <img src={photo3} />
+                            <img src={photo3} alt=""  />
                             <div className="text">
                                 <h6>Gold Apple</h6>
                                 <p>Biscuits/Golden</p>
@@ -42,7 +42,7 @@ const HEighth = () => {
                     <div className="col-lg-3 col-md-3 col-sm-3 col-12 p-0">
                         <div className="photo">
                             <div className="box"></div>
-                            <img src={photo4} />
+                            <img src={photo4} alt=""  />
                             <div className="text">
                                 <h6>The Perfect Dose</h6>
                                 <p>Cookies/Golden</p>

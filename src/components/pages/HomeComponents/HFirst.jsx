@@ -10,7 +10,15 @@ import image2 from "../../../assets/image/slider-img2.png"
 import image3 from "../../../assets/image/slider-img3.png"
 import image4 from "../../../assets/image/slider-img4.png"
 
+import AOS from "aos";
+import { useEffect } from 'react';
+
 const HFirst = () => {
+
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
     <>
 
@@ -36,7 +44,7 @@ const HFirst = () => {
             <div className="container">
               <div className="row justify-content-end">
                 <div className="col-lg-6 col-md-12 col-sm-12 col-12">
-                  <div className="text">
+                  <div className="text" data-aos="fade-down" >
                     <h1>It's Delish</h1>
                     <div className="line"></div>
                     <p>Sweet Tooth is a delightful theme designed for all types of modern cake shops &amp; ventures. Make your website today!</p>
@@ -50,7 +58,7 @@ const HFirst = () => {
             <div className="container">
               <div className="row justify-content-end">
                 <div className="col-lg-6 col-md-6 col-sm-6 col-12">
-                  <div className="text">
+                  <div className="text" data-aos="fade-down" >
                     <h1>A Sweet Bite</h1>
                     <div className="line"></div>
                     <p>Take it all in a single bite. Import the full demo content with a single mouse click using the one-click import feature.</p>
@@ -64,7 +72,7 @@ const HFirst = () => {
             <div className="container">
               <div className="row justify-content-end">
                 <div className="col-lg-6 col-md-6 col-sm-6 col-12">
-                  <div className="text">
+                  <div className="text" data-aos="fade-down" >
                     <h1>A Delicacy</h1>
                     <div className="line"></div>
                     <p>Sweet Tooth is packed with carefully designed inner pages &amp; beautiful, completely customizable homepage layouts.</p>
@@ -103,7 +111,7 @@ const HFirst = () => {
               <div className="row">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-12">
                   <div className="text">
-                    <img src={image1} />
+                    <img src={image1} alt=""  />
                     <div className="line"></div>
                     <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Quisque vel eros sit amet nulla pellentesque cursus nbam.</h1>
                     <button>TASTEFULL</button>
@@ -117,7 +125,7 @@ const HFirst = () => {
               <div className="row">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-12">
                   <div className="text">
-                    <img src={image2} />
+                    <img src={image2} alt=""  />
                     <div className="line"></div>
                     <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Quisque vel eros sit amet nulla pellentesque cursus nbam.</h1>
                     <button>TASTEFULL</button>
@@ -131,7 +139,7 @@ const HFirst = () => {
               <div className="row">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-12">
                   <div className="text">
-                    <img src={image3} />
+                    <img src={image3} alt=""  />
                     <div className="line"></div>
                     <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Quisque vel eros sit amet nulla pellentesque cursus nbam.</h1>
                     <button>TASTEFULL</button>
@@ -145,7 +153,7 @@ const HFirst = () => {
               <div className="row">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-12">
                   <div className="text">
-                    <img src={image4} />
+                    <img src={image4} alt=""  />
                     <div className="line"></div>
                     <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Quisque vel eros sit amet nulla pellentesque cursus nbam.</h1>
                     <button>TASTEFULL</button>
