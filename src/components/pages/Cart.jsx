@@ -16,7 +16,7 @@ const Cart = () => {
     <>
       {isEmpty ? (
         <div className="cart d-flex justify-content-center">
-          <h3 style={{ fontWeight: "bold" }}>Your cart is empty {items.length}</h3>
+          <h3 style={{ fontWeight: "bold" }}>Your cart is empty</h3>
         </div>
       ) : (
         <div className="Cart">

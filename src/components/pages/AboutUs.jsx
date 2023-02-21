@@ -14,10 +14,12 @@ import ScrollTrigger from 'react-scroll-trigger';
 
 import AOS from "aos"
 import { useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
 
 const AboutUs = () => {
 
   const [counterOn, setCounterOn] = useState(false)
+  const { t } = useTranslation()
 
   useEffect(() => {
     AOS.init({ duration: 3000 });
@@ -30,9 +32,9 @@ const AboutUs = () => {
           <div className="row">
             <div className="col-lg-12 col-md-12 col-sm-12 col-12">
               <div className="text">
-                <h1 data-aos="fade-down" >About Us</h1>
+                <h1 data-aos="fade-down" >{t("about.0")}</h1>
                 <div data-aos="fade-down" className="line"></div>
-                <h2 data-aos="fade-down" > We Are Super Company Together <i class="fa-solid fa-hand-fist"></i> </h2>
+                <h2 data-aos="fade-down" >{t("about.1")}<i class="fa-solid fa-hand-fist"></i> </h2>
               </div>
             </div>
           </div>
@@ -100,7 +102,7 @@ const AboutUs = () => {
             <div className="row">
               <div className="col-lg-3 col-md-3 col-sm-3 col-12">
                 <div className="box">
-                  <img src={sweet1} alt=""  />
+                  <img src={sweet1} alt="" />
                   {
                     counterOn && <p><CountUp start={0} end={625} duration={4} delay={0}></CountUp></p>
                   }
@@ -109,7 +111,7 @@ const AboutUs = () => {
               </div>
               <div className="col-lg-3 col-md-3 col-sm-3 col-12">
                 <div className="box">
-                  <img src={sweet2} alt=""  />
+                  <img src={sweet2} alt="" />
                   {
                     counterOn && <p><CountUp start={0} end={555} duration={4} delay={0}></CountUp></p>
                   }
@@ -118,7 +120,7 @@ const AboutUs = () => {
               </div>
               <div className="col-lg-3 col-md-3 col-sm-3 col-12">
                 <div className="box">
-                  <img src={sweet3} alt=""  />
+                  <img src={sweet3} alt="" />
                   {
                     counterOn && <p><CountUp start={0} end={275} duration={4} delay={0}></CountUp></p>
                   }
@@ -127,7 +129,7 @@ const AboutUs = () => {
               </div>
               <div className="col-lg-3 col-md-3 col-sm-3 col-12">
                 <div className="box">
-                  <img src={sweet4} alt=""  />
+                  <img src={sweet4} alt="" />
                   {
                     counterOn && <p><CountUp start={0} end={458} duration={4} delay={0}></CountUp></p>
                   }
@@ -152,25 +154,25 @@ const AboutUs = () => {
             <div className="col-lg-3 col-md-3 col-sm-3 col-12 p-0">
               <div className="box">
                 <div className="boxGrey"></div>
-                <img src={img1} alt=""  />
+                <img src={img1} alt="" />
               </div>
             </div>
             <div className="col-lg-3 col-md-3 col-sm-3 col-12 p-0">
               <div className="box">
                 <div className="boxGrey"></div>
-                <img src={img2} alt=""  />
+                <img src={img2} alt="" />
               </div>
             </div>
             <div className="col-lg-3 col-md-3 col-sm-3 col-12 p-0">
               <div className="box">
                 <div className="boxGrey"></div>
-                <img src={img3} alt=""  />
+                <img src={img3} alt="" />
               </div>
             </div>
             <div className="col-lg-3 col-md-3 col-sm-3 col-12 p-0">
               <div className="box">
                 <div className="boxGrey"></div>
-                <img src={img4} alt=""  />
+                <img src={img4} alt="" />
               </div>
             </div>
           </div>

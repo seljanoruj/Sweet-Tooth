@@ -2,8 +2,11 @@ import React from 'react'
 import blogData from '../../data/blogData'
 import AOS from "aos"
 import { useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
 
 const Blog = () => {
+
+  const { t } = useTranslation()
 
   useEffect(() => {
     AOS.init({ duration: 2000 });
@@ -17,9 +20,9 @@ const Blog = () => {
           <div className="row justify-content-end ">
             <div className="col-lg-6 col-md-6 col-sm-6 col-12">
               <div className="box" data-aos="fade-down" >
-                <h1>Blog</h1>
+                <h1>{t("blog.0")}</h1>
                 <div className="line"></div>
-                <h2> About Our Blogs <i class="fa-solid fa-hand-holding-heart"></i> </h2>
+                <h2>{t("blog.1")} <i class="fa-solid fa-hand-holding-heart"></i> </h2>
               </div>
             </div>
           </div>

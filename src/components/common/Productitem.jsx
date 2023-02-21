@@ -6,7 +6,6 @@ const Productitem = ({ product }) => {
 
     const { addItem, items } = useCart()
 
-    console.log(items);
     
     return (
         <>

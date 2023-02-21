@@ -2,6 +2,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.light {
+  --bgColor: #fff;
+  --textColor: black;
+  --boxColor: white;
+}
+
+.dark {
+  --bgColor: black;
+  --textColor: #cfa030;
+  --boxColor: white;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.fix {
+  padding: 15px 0;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+          box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
 .entry-first {
   width: 100%;
   height: 85vh;
@@ -426,6 +450,61 @@
   color: black;
 }
 
+.last-section button {
+  color: var(--btnTextColor);
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  padding: 4px 13px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(209, 180, 12, 0.884);
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+  -webkit-animation-name: btnAnimation;
+          animation-name: btnAnimation;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  z-index: 23;
+}
+
+.last-section button i {
+  font-size: 18px;
+}
+
+@-webkit-keyframes btnAnimation {
+  0% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+  }
+  50% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+  }
+}
+
+@keyframes btnAnimation {
+  0% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+  }
+  50% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+  }
+}
+
 footer {
   width: 100%;
   height: 60vh;
@@ -572,6 +651,11 @@ nav {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 10px 0;
+  background-color: var(--bgColor);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 333;
 }
 
 nav .left {
@@ -610,7 +694,7 @@ nav .right {
 }
 
 nav .right a {
-  color: black;
+  color: var(--textColor);
   text-decoration: none;
   font-size: 18px;
   font-weight: 300;
@@ -618,7 +702,7 @@ nav .right a {
 }
 
 nav .right a i {
-  color: #1a1818;
+  color: var(--textColor);
   font-size: 20px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -630,6 +714,7 @@ nav .right a i:hover {
 }
 
 nav .right button {
+  margin-right: 10px;
   color: black;
   font-size: 18px;
   font-family: 'Open Sans', sans-serif;
@@ -665,7 +750,7 @@ nav .right .number span {
 
 .HFirst {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
 }
 
 .HFirst .swiper-button-prev {
@@ -1570,7 +1655,7 @@ nav .right .number span {
 
 .AFirst {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   background-size: cover;
   background-position: bottom;
   -o-object-fit: cover;
@@ -1830,7 +1915,7 @@ nav .right .number span {
 
 .CFirst {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -2030,7 +2115,7 @@ nav .right .number span {
 
 .OFirst {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   background-size: cover;
   background-attachment: fixed;
   background-image: url(../image/our-process-bg.jpeg);
@@ -2460,7 +2545,7 @@ nav .right .number span {
 
 .ShopFirst {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   background-size: cover;
   background-position: center;
   background-image: url(../image/shop-bg.jpeg);
@@ -2509,6 +2594,8 @@ nav .right .number span {
 .ShopSecond {
   width: 100%;
   height: auto;
+  background-color: var(--bgColor);
+  color: var(--textColor);
 }
 
 .ShopSecond .head {
@@ -2538,7 +2625,42 @@ nav .right .number span {
   color: #cfa030;
 }
 
+.ShopSecond .searchbox {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ShopSecond .searchbox input {
+  padding: 10px 15px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border: 1px solid #cfa030;
+  font-size: 18px;
+}
+
+.ShopSecond .searchbox button {
+  padding: 10px 30px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border: 1px solid black;
+  background-color: black;
+  color: #cfa030;
+  letter-spacing: 1px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+
 .ShopSecond .box {
+  background-color: var(--boxColor);
   border: 1px solid transparent;
   border-radius: 20px;
   -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
@@ -2591,13 +2713,15 @@ nav .right .number span {
   font-size: 15px;
   padding: 8px;
   margin-bottom: 5px;
-  font-family: 'Open Sans', sans-serif;
 }
 
 .Cart {
   width: 100%;
   height: auto;
   padding: 40px 0;
+  background-color: var(--bgColor);
+  color: var(--textColor);
+  margin-top: 12vh;
 }
 
 .Cart .cart-main {
@@ -2698,13 +2822,13 @@ nav .right .number span {
 }
 
 .Cart .cart-main h3 {
-  color: black;
+  color: var(--textColor);
   font-weight: 300;
 }
 
 .BlogFirst {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   background-size: cover;
   background-position: bottom;
   -o-object-fit: cover;
@@ -2769,6 +2893,7 @@ nav .right .number span {
 .BlogSecond {
   width: 100%;
   height: auto;
+  background-color: var(--bgColor);
 }
 
 .BlogSecond .head {
@@ -2791,6 +2916,7 @@ nav .right .number span {
   font-size: 70px;
   font-weight: 400;
   letter-spacing: 1px;
+  color: var(--textColor);
 }
 
 .BlogSecond .head h1 i {
@@ -2799,6 +2925,7 @@ nav .right .number span {
 }
 
 .BlogSecond .box {
+  background-color: var(--boxColor);
   padding: 10px;
   width: 100%;
   height: 100%;

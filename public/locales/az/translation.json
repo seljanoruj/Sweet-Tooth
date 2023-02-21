@@ -1,0 +1,30 @@
+{
+    "nav": {
+        "0": "Ana Səhifə",
+        "1": "Haqqımızda",
+        "2": "Bizim Proses",
+        "3": "Bloq",
+        "4": "Alış-veriş",
+        "5": "Əlaqə"
+    },
+    "about": {
+        "0": "Haqqqımızda",
+        "1": "Biz Birlikde Super Bir Şirkətik"
+    },
+    "process": {
+        "0": "Bizim Proses",
+        "1": "Bizim Proses Haqqında"
+    },
+    "blog": {
+        "0": "Bloq",
+        "1": "Bloqlarımız Haqqında"
+    },
+    "contact": {
+        "0": "Əlaqə",
+        "1": "Bizi Seçin,Məmnun Qalın"
+    },
+    "shop": {
+        "0": "Alış-veriş",
+        "1": "Bizim Məhsullar Olduqca Dadlıdır !"
+    }
+}

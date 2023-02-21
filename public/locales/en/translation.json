@@ -1,0 +1,30 @@
+{
+    "nav": {
+        "0": "Home",
+        "1": "About Us",
+        "2": "Our Process",
+        "3": "Blog",
+        "4": "Shop",
+        "5": "Contact Us"
+    },
+    "about": {
+        "0": "About Us",
+        "1": "We Are Super Company Together"
+    },
+    "process": {
+        "0": "Our Process",
+        "1": "About Our Process"
+    },
+    "blog": {
+        "0": "Blog",
+        "1": "About Our Blogs"
+    },
+    "contact": {
+        "0" : "Contact Us",
+        "1" : "Choose Us,Be Satisfied"
+    },
+    "shop": {
+        "0" : "Shop",
+        "1" : "Our Products Are Very Delicious !"
+    }
+}

@@ -9,8 +9,11 @@ import { useEffect } from 'react'
 
 import CountUp from 'react-countup'
 import ScrollTrigger from 'react-scroll-trigger'
+import { useTranslation } from 'react-i18next'
 
 const OurProcess = () => {
+
+  const { t } = useTranslation()
 
   const [counterOn, setCounterOn] = useState(false)
 
@@ -57,9 +60,9 @@ const OurProcess = () => {
           <div className="row">
             <div className="col-lg-12 col-md-12 col-sm-12 col-12">
               <div className="text">
-                <h1 data-aos="fade-down" >Our Process</h1>
+                <h1 data-aos="fade-down" >{t("process.0")}</h1>
                 <div data-aos="fade-down" className="line"></div>
-                <h2 data-aos="fade-down" > About Our Process <i class="fa-solid fa-star"></i> </h2>
+                <h2 data-aos="fade-down" >{t("process.1")} <i class="fa-solid fa-star"></i> </h2>
               </div>
             </div>
           </div>

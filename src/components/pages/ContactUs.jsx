@@ -1,8 +1,11 @@
 import React from 'react'
 import AOS from "aos"
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next'
 
 const ContactUs = () => {
+
+  const { t } = useTranslation()
 
   useEffect(() => {
     AOS.init({ duration: 2000 });
@@ -15,9 +18,9 @@ const ContactUs = () => {
           <div className="row">
             <div className="col-lg-6 col-md-6 col-sm-6 col-12">
               <div className="text">
-                <h1 data-aos="fade-down" >Contact Us</h1>
+                <h1 data-aos="fade-down" > {t("contact.0")} </h1>
                 <div className="line"></div>
-                <h2 data-aos="fade-right" > Choose Us,Be Satisfied <i class="fa-solid fa-phone-flip"></i> </h2>
+                <h2 data-aos="fade-right" > {t("contact.1")} <i class="fa-solid fa-phone-flip"></i> </h2>
               </div>
             </div>
           </div>
