@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.dropdown-item, .dropdown-menu {
+  min-width: 100px !important;
+}
+
 .light {
   --bgColor: #fff;
   --textColor: black;
@@ -673,7 +677,7 @@ nav .left {
 }
 
 nav .left img {
-  width: 30%;
+  width: 35%;
   height: auto;
   -o-object-fit: contain;
      object-fit: contain;
@@ -2721,7 +2725,7 @@ nav .right .number span {
   padding: 40px 0;
   background-color: var(--bgColor);
   color: var(--textColor);
-  margin-top: 12vh;
+  margin-top: 10vh;
 }
 
 .Cart .cart-main {
@@ -3004,5 +3008,97 @@ nav .right .number span {
   height: 1px;
   background-color: #cfa030;
   margin-bottom: 20px;
+}
+
+.WishFirst {
+  width: 100%;
+  height: 20vh;
+  margin-top: 9vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.WishFirst h1 {
+  color: #000000;
+  font-size: 70px;
+  font-weight: 300;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
+}
+
+.WishFirst h1 i {
+  color: #cfa030;
+  font-size: 35px;
+}
+
+.SignFirst {
+  width: 100%;
+  height: 90vh;
+  margin-top: 9vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.SignFirst form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.SignFirst form h2 {
+  color: #000000;
+  font-size: 50px;
+  font-weight: 300;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
+}
+
+.SignFirst form h2 i {
+  color: #cfa030;
+  font-size: 35px;
+}
+
+.SignFirst form input {
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.SignFirst form button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: black;
+  color: #cfa030;
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
 }
 /*# sourceMappingURL=style.css.map */

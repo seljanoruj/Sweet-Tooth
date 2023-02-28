@@ -3,14 +3,39 @@ import { useCart } from 'react-use-cart'
 import { toast } from 'react-toastify';
 import AOS from "aos";
 import { useEffect } from 'react';
+import { useNavigate } from "react-router-dom";
+
+import { Modal } from "antd";
+import { ExclamationCircleOutlined } from "@ant-design/icons";
 
 const Cart = () => {
 
-  const { isEmpty, items, removeItem, updateItemQuantity, cartTotal } = useCart();
+  const { isEmpty, items, removeItem, updateItemQuantity, cartTotal, setItems } = useCart();
 
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
+
+  const history = useNavigate()
+  const confirm = () => {
+    Modal.confirm({
+      title: "Create an account or log in to purchase products",
+      icon: <ExclamationCircleOutlined />,
+      onOk() {
+        history('/signin')
+      },
+      onCancel() { },
+    });
+  };
+  const redirectLogin = () => {
+    if (localStorage.getItem('emailData')) {
+      setItems([])
+      toast.success('You bought all products')
+    }
+    else {
+      confirm()
+    }
+  }
 
   return (
     <>
@@ -107,7 +132,7 @@ const Cart = () => {
                 <div className="col-lg-12">
                   <div className="total d-flex justify-content-between" style={{ padding: ' 20px 70px '}}>
                     <h3>Subtotal : {cartTotal}$</h3>
-                    <button className="btn">Buy Now</button>
+                    <button className="btn" onClick={redirectLogin} >Buy Now</button>
                   </div>
                 </div>
 

@@ -12,6 +12,9 @@
 //font-family: 'Playfair Display', serif;
 //font-family: 'Open Sans', sans-serif;
 
+.dropdown-item, .dropdown-menu{
+    min-width: 100px !important;
+}
 .light{
     --bgColor: #fff;
     --textColor: black;
@@ -454,7 +457,7 @@ nav{
         align-items: center;
         justify-content: flex-start;
         img{
-            width: 30%;
+            width: 35%;
             height: auto;
             object-fit: contain;
         }
@@ -1839,7 +1842,7 @@ nav{
     padding: 40px 0;
     background-color: var(--bgColor);
     color: var(--textColor);
-    margin-top: 12vh;
+    margin-top: 10vh;
    .cart-main{
     width: 95%;
     height: auto;
@@ -2053,6 +2056,68 @@ nav{
             height: 1px;
             background-color: #cfa030;
             margin-bottom: 20px;
+        }
+    }
+}
+.WishFirst{
+    width: 100%;
+    height: 20vh;
+    margin-top: 9vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    h1{
+        color: #000000;
+        font-size: 70px;
+        font-weight: 300;
+        font-family: 'Playfair Display', serif;
+        letter-spacing: 1px;
+        i{
+            color: #cfa030;
+            font-size: 35px;
+        }
+    }
+}
+.SignFirst{
+    width: 100%;
+    height: 90vh;
+    margin-top: 9vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h2{
+            color: #000000;
+            font-size: 50px;
+            font-weight: 300;
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 1px;
+            i{
+                color: #cfa030;
+                font-size: 35px;
+            }
+        }
+        input{
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        button{
+            margin-top: 15px;
+            padding: 10px 20px ;
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: black;
+            color: #cfa030;
+            letter-spacing: 1px;
+            font-size: 18px;
+            font-family: 'Open Sans', sans-serif;
         }
     }
 }
