@@ -192,7 +192,7 @@ const OurProcess = () => {
                 <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)} >
                   <div className="boxes">
                     <div className="row">
-                      <div className="col-lg-4">
+                      <div className="col-lg-4 col-12">
                         <div className="box">
                           {
                             counterOn && <span> <CountUp start={0} end={10} duration={4} delay={0} ></CountUp> </span>
@@ -200,7 +200,7 @@ const OurProcess = () => {
                           <h2>Years</h2>
                         </div>
                       </div>
-                      <div className="col-lg-4">
+                      <div className="col-lg-4 col-12">
                         <div className="box">
                           {
                             counterOn && <span> <CountUp start={0} end={11} duration={4} delay={0} ></CountUp> </span>
@@ -208,7 +208,7 @@ const OurProcess = () => {
                           <h2>Months</h2>
                         </div>
                       </div>
-                      <div className="col-lg-4">
+                      <div className="col-lg-4 col-12">
                         <div className="box">
                           {
                             counterOn && <span> <CountUp start={0} end={25} duration={4} delay={0} ></CountUp> </span>

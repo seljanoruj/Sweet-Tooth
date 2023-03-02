@@ -8,18 +8,20 @@ const Wishlist = () => {
 
     const wishlist = useSelector((state) => state.wishlist);
 
-     useEffect(() => {
+    useEffect(() => {
         AOS.init({ duration: 2000 });
-      }, []);
+    }, []);
 
     return (
         <>
             <section className='WishFirst'>
-                <h1 data-aos="fade-down">
-                    <i class="fa-solid fa-cookie-bite" data-aos="fade-right"></i>
-                    Wishlist 
-                    <i class="fa-solid fa-candy-cane" data-aos="fade-left"></i>
-                </h1>
+                <div className="col-12">
+                    <h1 data-aos="fade-down">
+                        <i class="fa-solid fa-cookie-bite" data-aos="fade-right"></i>
+                        Wishlist
+                        <i class="fa-solid fa-candy-cane" data-aos="fade-left"></i>
+                    </h1>
+                </div>
             </section>
             {
                 wishlist.length !== 0 ? (
