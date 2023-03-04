@@ -77,7 +77,7 @@ const Nav = () => {
                             <img src={logo} alt="" />
                         </div>
                     </div>
-                    <div className="col-lg-9 col-md-6 col-sm-6 col-12">
+                    <div className="col-lg-5 col-md-3 col-sm-3 col-12">
                         <div className="right">
                             <NavLink activeClassName='now' exact to='/'>{t("nav.0")}</NavLink>
                             <NavLink activeClassName='now' to='/aboutus'>{t("nav.1")}</NavLink>
@@ -85,7 +85,11 @@ const Nav = () => {
                             <NavLink activeClassName='now' to='/blog'>{t("nav.3")}</NavLink>
                             <NavLink activeClassName='now' to='/shop'>{t("nav.4")}</NavLink>
                             <NavLink activeClassName='now' to='/contactus'>{t("nav.5")}</NavLink>
+                        </div>
+                    </div>
 
+                    <div className="col-lg-4 col-md-3 col-sm-3 col-12">
+                        <div className="right">
                             <div className='number'>
                                 <NavLink to="/cart"><i class="fa-solid fa-cart-shopping"></i></NavLink>
                                 <span>{items.length}</span>
@@ -100,7 +104,6 @@ const Nav = () => {
 
                             <Lang />
                             <Mode />
-
                         </div>
                     </div>
                 </div>

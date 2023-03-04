@@ -17,18 +17,28 @@ const HFifth = () => {
 
     useEffect(() => {
         AOS.init({ duration: 2000 });
-      }, []);
+    }, []);
 
     const options = {
         margin: 30,
         responsiveClass: true,
         nav: true,
         items: 4,
-        navText: ["Prev", "Next"],
         smartSpeed: 1000,
         autoplay: true,
         autoplayTimeout: 1000,
-        loop: true
+        loop: true,
+        responsive:{
+            0:{
+                items:1,
+            },
+            600:{
+                items:3,
+            },
+            1000:{
+                items:5,
+            }
+        }
     };
 
     return (
@@ -39,7 +49,7 @@ const HFifth = () => {
                     <div className="row">
                         <div className="col-lg-6 col-md-6 col-sm-6 col-12">
                             <div className="img" data-aos="fade-right" >
-                                <img src={img} alt=""  />
+                                <img src={img} alt="" />
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-6 col-12">

@@ -32,7 +32,7 @@ const Signin = () => {
     };
 
     return (
-        <section className='SignFirst'>
+        <section className='SiginFirst'>
             <form onSubmit={handleSubmit}>
 
                 <h2 data-aos="fade-down" >
@@ -41,15 +41,15 @@ const Signin = () => {
                     <i class="fa-solid fa-candy-cane" data-aos="fade-left"></i>
                 </h2>
 
-                <input data-aos="fade-down"  type="text" placeholder="Your Username" ref={name} />
+                <input data-aos="fade-down" type="text" placeholder="Your Username" ref={name} />
 
-                <input data-aos="fade-down" 
+                <input data-aos="fade-down"
                     type="password"
                     placeholder="Your Password"
                     ref={password}
                 />
 
-                <button data-aos="fade-down"  type="submit">Log in</button>
+                <button data-aos="fade-down" type="submit">Log in</button>
 
             </form>
         </section>

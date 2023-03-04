@@ -23,15 +23,15 @@ const OurProcess = () => {
 
   const items = [
     {
-      title: 'salanm bakry',
+      title: 'Bakery',
       category: 'bakery'
     },
     {
-      title: 'salanm pstry',
-      category: 'pastryr'
+      title: 'Pastry',
+      category: 'pastry'
     },
     {
-      title: 'salanm recie',
+      title: 'Recipe',
       category: 'recipe'
     }
   ]
@@ -71,29 +71,29 @@ const OurProcess = () => {
       <section className='OSecond'>
         <div className="container">
           <div className="row">
+
             <div className="col-lg-6 col-md-6 col-sm-6 col-12">
               <div className="box" data-aos="fade-right"  >
-                <img src={pancakes} alt=""  />
+                <img src={pancakes} alt="" />
               </div>
             </div>
-            <div className="col-lg-6 col-md-6 col-sm-6 col-12">
-              <div className="box">
-                <div className="col-lg-6 col-md-6 col-sm-6 col-12">
-                  <div className="box1" data-aos="fade-down" >
-                    <img src={icon1} alt=""  />
-                    <h3>Smooth Bite</h3>
-                    <span>Quisque vel eros sit amet nullapel lentes cursus. Morbi blandit luctus lorem set.</span>
-                  </div>
-                </div>
-                <div className="col-lg-6 col-md-6 col-sm-6 col-12">
-                  <div className="box1" data-aos="fade-down"  >
-                    <img src={icon2} alt=""  />
-                    <h3>Stylish Design</h3>
-                    <span>Quisque vel eros sit amet nullapel lentes cursus. Morbi blandit luctus lorem set.</span>
-                  </div>
-                </div>
+
+            <div className="col-lg-3 col-md-6 col-sm-6 col-12">
+              <div className="box1" data-aos="fade-down" >
+                <img src={icon1} alt="" />
+                <h3>Smooth Bite</h3>
+                <span>Quisque vel eros sit amet nullapel lentes cursus. Morbi blandit luctus lorem set.</span>
               </div>
             </div>
+
+            <div className="col-lg-3 col-md-6 col-sm-6 col-12">
+              <div className="box1" data-aos="fade-down"  >
+                <img src={icon2} alt="" />
+                <h3>Stylish Design</h3>
+                <span>Quisque vel eros sit amet nullapel lentes cursus. Morbi blandit luctus lorem set.</span>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
@@ -109,7 +109,7 @@ const OurProcess = () => {
             </div>
             <div className="col-lg-6 col-md-6 col-sm-6 col-12">
               <div className="box" data-aos="fade-left"  >
-                <img src={icecream} alt=""  />
+                <img src={icecream} alt="" />
               </div>
             </div>
           </div>
@@ -223,7 +223,7 @@ const OurProcess = () => {
             </div>
             <div className="col-lg-6 col-md-6 col-sm-6 col-12">
               <div className="right" data-aos="fade-left" >
-                <img src={cake} alt=""  />
+                <img src={cake} alt="" />
               </div>
             </div>
           </div>

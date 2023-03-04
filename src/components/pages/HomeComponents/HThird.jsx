@@ -7,7 +7,7 @@ const HThird = () => {
 
     useEffect(() => {
         AOS.init({ duration: 2000 });
-      }, []);
+      }, []); 
 
     return (
         <section className='HThird'>
